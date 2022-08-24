@@ -396,7 +396,7 @@
     <!--Футер-->
     <footer class="footer">
       <div class="container">
-        <section class="footer-section-address">
+        <div class="footer-section-address">
           <a class="logo logo-footer link" href=""
             >Web<span class="footer-logo">Studio</span></a
           >
@@ -421,8 +421,8 @@
               </li>
             </ul>
           </address>
-        </section>
-        <section class="footer-section-join">
+        </div>
+        <div class="footer-section-join">
           <h3 class="join-text">ПРИСОИДЕНЯЙТЕСЬ</h3>
           <ul class="join-soc list">
             <li class="join-soc-item">
@@ -454,8 +454,8 @@
               </a>
             </li>
           </ul>
-        </section>
-        <section class="footer-section-follow">
+        </div>
+        <div class="footer-section-follow">
           <h3 class="join-text">Подпишитесь на рассылку</h3>
           <form class="modal-form">
             <div class="input-field-follow">
@@ -475,7 +475,7 @@
               </button>
             </div>
           </form>
-        </section>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -488,11 +488,10 @@
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
           <div class="input-field">
-            <label class="input-title">Ваше имя</label>
-            <span></span>
+            <label for="user-name" class="input-title">Ваше имя</label>
             <div class="input-wrap">
               <input
-                type="text"
+                type="name"
                 class="form-input"
                 name="user-name"
                 placeholder=" "
@@ -506,15 +505,15 @@
           </div>
           <p class="error">Поле не заполнено</p>
           <div class="input-field">
-            <label for="user-email" class="input-title">Ваша почта</label>
+            <label for="user-mail" class="input-title">Ваша почта</label>
             <div class="input-wrap">
               <input
-                type="email"
+                type="mail"
                 class="form-input"
-                name="user-email"
+                name="user-mail"
                 placeholder=" "
                 required
-                id="user-email"
+                id="user-mail"
               />
               <svg class="input-icon" width="18" height="18">
                 <use href="./img/symbol-defs.svg#icon-email-black"></use>
@@ -522,7 +521,6 @@
             </div>
           </div>
           <p class="error">Поле не заполнено</p>
-
           <div class="input-field">
             <label for="user-tel" class="input-title">Ваш телефон</label>
             <div class="input-wrap">
@@ -541,7 +539,7 @@
             </div>
           </div>
           <p class="error">Поле не заполнено</p>
-          <div class="input-field">
+          <div class="input-field-comment">
             <label for="user-comment" class="input-title">Комментарий</label>
             <textarea
               name="user-comment"
